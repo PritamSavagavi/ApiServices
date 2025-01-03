@@ -1,0 +1,26 @@
+# Ignore build directories
+/bin/
+/obj/
+
+/# Ignore user-specific files
+.vscode/
+.vs/
+
+# User-specific files for Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET Core Files
+appsettings.Development.json
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# macOS Finder files
+.DS_Store
+
+# Linux files
+*.swp
