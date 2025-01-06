@@ -26,12 +26,15 @@ namespace ApiServices.Controllers
         [HttpGet("{id}")]
         public ActionResult<AppUser> GetUser(int id)
         {
-            return _context.Users.Find(id);
-              
+            //return _context.Users.FirstOrDefault(a => a.Id = id);
+            var user = _context.Users?.FirstOrDefault(u => u.Id == id);
+
+            if (user is null)
+            {
+                return NotFound(); // HTTP 404
+            }
+
+            return user;
         }
-          //  if (user == null)
-            // {
-            //     return NotFound(); // If user is not found, return 404
-            // }
     }
 }
