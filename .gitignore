@@ -14,6 +14,7 @@
 
 # ASP.NET Core Files
 appsettings.Development.json
+appsettings.json
 
 # Windows Installer files
 Thumbs.db
