@@ -6,9 +6,7 @@ using SQLitePCL;
 
 namespace ApiServices.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class UsersController(DataContext context) : ControllerBase
+    public class UsersController(DataContext context) : BaseController
     {
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
